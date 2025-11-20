@@ -1,0 +1,18 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}",
+                "-lm" // Додай цей рядок!
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
+}
